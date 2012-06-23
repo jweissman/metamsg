@@ -1,6 +1,12 @@
-# Metamsg
+#
+#    Metamsg
+#
 
-TODO: Write a gem description
+Metamessenger is intended to be a command-line interface to social webservices, providing
+a unified CLI for power and an extensible API so you can connect up to your own services.
+
+Other ideas: a little daemon driving a webpage like mailcatcher for a river of news effect and
+a visual interface to the metamsg API, Growl integration, and perhaps a related webservice.
 
 ## Installation
 
