@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/metamsg/version', __FILE__)
+require File.expand_path('../lib/version', __FILE__)
 
 Gem::Specification.new do |gem|
 
@@ -7,9 +7,9 @@ Gem::Specification.new do |gem|
 
   gem.authors       = ["Joseph Weissman"]
   gem.email         = ["jweissman1986@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = "metamsg.io"
+  gem.description   = %q{Metamessenger provides a unified CLI interface to text-oriented social webservices.}
+  gem.summary       = %q{All your networks in one place.}
+  # gem.homepage      = "metamsg.io"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
