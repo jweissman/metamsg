@@ -1,6 +1,4 @@
-#
-#    Metamsg
-#
+## Metamsg
 
 Metamessenger is intended to be a command-line interface to social webservices, providing
 a unified CLI for power and an extensible API so you can connect up to your own services.

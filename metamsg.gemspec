@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "metamsg"
   gem.require_paths = ["lib"]
   gem.version       = Metamsg::VERSION
+
+  gem.add_dependency 'main'
 end
