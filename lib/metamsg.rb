@@ -7,8 +7,16 @@ require 'main'
 
 # twitter, facebook gems
 
-require 'metamsg/version'
-require 'metamsg/autorun'
+require 'version'
+require 'metamsg/core'
+require 'metamsg/framework'
+require 'metamsg/runner'
+
+# require 'metamsg/newsriver'
+# require 'metmasg/webrunner'
+# require 'metamsg/webstudio'
+
+## require 'metamsg/autorun'
 
 
-module Metamsg end
+# module Metamsg end
