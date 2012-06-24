@@ -1,9 +1,9 @@
-Feature: Hello World Feature
-  In order to ensure that my installation works
-  As a Developer
-  I want to run a quick Cucumber test
+Feature: Delivers messages
+  In order to ensure that my voice can be heard
+  As an interesting person
+  I want to send messages to social services
 
-  Scenario: Hello World Scenario
-    Given The Action is Hello
-    When The Subject is World
-    Then The Greeting is Hello, World
+  Scenario: post a message to Twitter
+    Given a message with text 'Hello, world!'
+    When selected service is Twitter
+    Then post 'Hello, world!' to Twitter

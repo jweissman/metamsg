@@ -1,13 +1,14 @@
 require 'rspec/expectations'
 
-Given /The Action is ([A-z]*)/ do |action|
-  @action = action
+Given /a message with text '(.*)'/ do |message|
+   @message = message
 end
 
-When /The Subject is ([A-z]*)/ do |subject|
-  @subject = subject
+When /selected service is ([A-z*])/ do |service|
+  @service = service
 end
 
-Then /The Greeting is (.*)/ do |greeting|
-  greeting.should == "#{@action}, #{@subject}"
+Then /post '(.*)' to ([A-z*])/ do |message, service|
+  @message.should == message
+  @service.should == service
 end
