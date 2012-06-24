@@ -6,7 +6,7 @@ class Metamsg::Core
     # @configuration = Metamsg::Config.new(opts)
   end
 
-  def emit!(msg) each_framework { |f| f.emit!(msg) } end
+  #  def emit!(msg) each_framework { |f| f.emit!(msg) } end
 
-  private def each_framework; @message_framework.each end
+  # private def each_framework; @message_framework.each end
 end

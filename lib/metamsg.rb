@@ -2,6 +2,8 @@ require File.expand_path('../../load_paths', __FILE__)
 
 # external deps
 require 'main'
+require 'ruby-debug'
+# puts "--- metamsg.rb"
 # commander, highline, etc?
 # finder?
 

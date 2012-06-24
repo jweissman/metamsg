@@ -4,7 +4,7 @@ Given /a message with text '(.*)'/ do |message|
    @message = message
 end
 
-When /selected service is ([A-z*])/ do |service|
+When /configuration setup for ([A-z*])/ do |service|
   @service = service
 end
 
@@ -13,4 +13,6 @@ Then /post '(.*)' to ([A-z*])/ do |message, service|
   @service.should == service
 
   # how to validate delivery
+
+  pending
 end

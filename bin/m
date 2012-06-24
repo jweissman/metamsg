@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
 
+puts "-- loading metamsg framework, please wait just a moment"
 require 'metamsg'
+
+puts "-- launching CLI agent! metamessenger in in the house"
 require 'metamsg/autorun'
