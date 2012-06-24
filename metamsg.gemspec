@@ -19,5 +19,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'main'
+  gem.add_dependency 'highline'
+
 
 end

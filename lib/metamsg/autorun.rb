@@ -1,42 +1,42 @@
-require 'ruby-debug'
+# require 'ruby-debug'
+
+
 #
-#       the command-line interface utility
+#   metamsg's command-line interface utility
 #
 Main {
+  @config_path = '~/.metamsg/config.yml'
+
+  config :twitter => {
+      :handle => '@you',
+      :password => 'yoursecret',
+      :api_key => 'yourkey'
+  }
+
+  # argument 'setup'
   # argument 'foo'
   # argument 'version'
 
   # argument 'message'
-
-  option 'v'
-  option 'verbose'
-  option 'version'
-
-  option 'message'
-
-  # option 'debug'
+  #
+  #option 'v'
+  #option 'verbose'
+  #option 'version'
+  #
+  #option 'message'
+  #
+  ## option 'debug'
 
   def run
 
     puts "--- AUTORUN!!"
 
-    # unfurl banner
-    verbose = params['verbose'] || params['v']
-    version = params['version']
-    debug "--- metamessenger v#{Metamsg::VERSION}" if version or verbose
-    exit_success! if version
 
-    ###
-    #
-    # params
-    #
-    if verbose
-      debug "=== debug" if verbose
-      debugger
-    end
-    # p params['version']
-    # p params['verbose']
 
     exit_success!
+  end
+
+  mode 'setup' do
+    puts ''
   end
 }

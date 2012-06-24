@@ -17,7 +17,8 @@ gem 'rspec'
 gem 'rspec-expectations'
 
 gem 'cucumber'
+gem 'aruba'
 
-# gem 'main'
+gem 'main'
 
 gemspec
