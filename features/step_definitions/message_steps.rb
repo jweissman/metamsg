@@ -11,4 +11,6 @@ end
 Then /post '(.*)' to ([A-z*])/ do |message, service|
   @message.should == message
   @service.should == service
+
+  # how to validate delivery
 end
