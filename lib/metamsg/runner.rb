@@ -1,0 +1,5 @@
+class Metamsg::Runner
+
+
+
+end
